@@ -11,17 +11,21 @@
 	<groupId>com.project</groupId>
 	<artifactId>perclib</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>perclib</name>
 	<description>Backend part of the Perc Lib app - the book management system</description>
+
 	<properties>
 		<java.version>17</java.version>
+		<hibernate.core.version>5.6.15.Final</hibernate.core.version>
+		<spring.orm.version>5.3.24</spring.orm.version>
+		<spring.tx.version>5.3.24</spring.tx.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -36,6 +40,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.orm.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.tx.version}</version>
 		</dependency>
 	</dependencies>
 
